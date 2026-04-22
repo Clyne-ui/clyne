@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export function LoadingPage() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -18,7 +18,7 @@ export function LoadingPage() {
     },
   };
 
-  const letterVariants = {
+  const letterVariants: Variants = {
     hidden: {
       opacity: 0,
       y: 20,
@@ -35,7 +35,7 @@ export function LoadingPage() {
     },
   };
 
-  const logoVariants = {
+  const logoVariants: Variants = {
     hidden: { opacity: 0, scale: 0.5 },
     visible: {
       opacity: 1,

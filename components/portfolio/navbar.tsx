@@ -36,11 +36,11 @@ export function Navbar() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  const menuVariants = {
+  const menuVariants: Variants = {
     closed: {
       x: '100%',
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 40,
       },
@@ -48,7 +48,7 @@ export function Navbar() {
     open: {
       x: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 40,
         staggerChildren: 0.1,
@@ -57,7 +57,7 @@ export function Navbar() {
     },
   };
 
-  const linkVariants = {
+  const linkVariants: Variants = {
     closed: { x: 20, opacity: 0 },
     open: { x: 0, opacity: 1 },
   };
