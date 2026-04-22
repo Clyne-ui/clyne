@@ -8,6 +8,10 @@
     "start": "next start -p 5000",
     "lint": "eslint ."
   },
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "npm@10.5.0",
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "1.2.12",
