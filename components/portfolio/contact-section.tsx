@@ -27,11 +27,11 @@ export function ContactSection() {
 
     // Check if Firebase is configured
     if (process.env.NEXT_PUBLIC_FIREBASE_API_KEY === 'YOUR_API_KEY' || !db) {
-       console.warn('Firebase is not yet configured. Please update lib/firebase.ts with your credentials.');
-       // For now, we'll simulate a failure so the user knows they need to finish setup
-       setSubmitStatus('error');
-       setIsSubmitting(false);
-       return;
+      console.warn('Firebase is not yet configured. Please update lib/firebase.ts with your credentials.');
+      // For now, we'll simulate a failure so the user knows they need to finish setup
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
     }
 
     try {

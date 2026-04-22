@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import { portfolioData } from '@/lib/portfolio-constants';
@@ -65,9 +65,8 @@ export function Navbar() {
   return (
     <>
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          isScrolled ? 'py-4 bg-background/80 backdrop-blur-md border-b border-border shadow-lg' : 'py-6 bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'py-4 bg-background/80 backdrop-blur-md border-b border-border shadow-lg' : 'py-6 bg-transparent'
+          }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -187,8 +186,8 @@ export function Navbar() {
                 </svg>
               )}
             </motion.button>
-            
-            <button 
+
+            <button
               className="p-2 text-muted-foreground hover:text-blue-500 transition-colors"
               onClick={() => setIsMenuOpen(true)}
               aria-label="Open Menu"
@@ -226,7 +225,7 @@ export function Navbar() {
                   <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                     Menu
                   </span>
-                  <button 
+                  <button
                     onClick={() => setIsMenuOpen(false)}
                     className="p-2 rounded-full hover:bg-muted transition-colors"
                     aria-label="Close Menu"
