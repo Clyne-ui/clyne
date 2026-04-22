@@ -296,3 +296,15 @@ button {
   background-color: var(--primary);
   color: var(--primary-foreground);
 }
+
+/* Hide Next.js Dev Indicators & Vercel Toolbar */
+#nextjs-dev-overlay,
+.nextjs-static-indicator-container,
+[data-nextjs-static-indicator],
+[data-vercel-toolbar],
+[data-nextjs-toast-wrapper] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

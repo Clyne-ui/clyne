@@ -30,7 +30,7 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          © {currentYear} Clyne Wafula. All rights reserved. Built with Next.js, React, and Framer Motion.
+          © {currentYear} Clyne Wafula. All rights reserved. Built with React and Framer Motion.
         </motion.p>
       </motion.div>
     </footer>
