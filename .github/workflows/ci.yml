@@ -37,7 +37,7 @@ jobs:
       - name: Build Next.js app
         run: npm run build
   deploy:
-    needs: build-and-test
+    needs:  build
     # Only deploy on pushes to main, not on pull requests
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
