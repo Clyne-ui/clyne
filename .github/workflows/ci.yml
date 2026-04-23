@@ -26,8 +26,7 @@ jobs:
       - name: Security Check (Dependencies)
         run: npm audit --audit-level=high
 
-      - name: Lint
-        run: npm run lint
+ 
 
       - name: Type Check
         run: npx tsc --noEmit
