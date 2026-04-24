@@ -137,7 +137,7 @@ export function Navbar() {
 
             <div className="flex items-center gap-4">
               <motion.a
-                href="/resume.pdf"
+                href={portfolioData.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-lg bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/20"
@@ -252,7 +252,7 @@ export function Navbar() {
 
                 <motion.div variants={linkVariants} className="mt-auto">
                   <a
-                    href="/resume.pdf"
+                    href={portfolioData.resume}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-4 rounded-xl bg-blue-500 text-white text-lg font-bold flex items-center justify-center gap-3 shadow-lg shadow-blue-500/20"

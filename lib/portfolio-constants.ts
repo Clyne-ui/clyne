@@ -4,6 +4,7 @@ export const portfolioData = {
   email: 'clynewafula1@gmail.com',
   github: 'https://github.com/Clyne-ui',
   profileImage: '/images/profil.jpeg',
+  resume: '/resume.pdf',
 
   summary: `A passionate Full Stack Software Engineer and Systems Architect with expertise in building 
 scalable, high-performance systems. Specialized in designing robust backend architectures, developing 
